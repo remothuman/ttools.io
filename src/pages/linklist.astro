@@ -1,0 +1,438 @@
+---
+import hypnospaceImage from '../assets/hypnospace.png';
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>link links</title>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KCTxnIGZpbGw9Im5vbmUiPgoJCTxwYXRoIGQ9Im0xMi41OTMgMjMuMjU4bC0uMDExLjAwMmwtLjA3MS4wMzVsLS4wMi4wMDRsLS4wMTQtLjAwNGwtLjA3MS0uMDM1cS0uMDE2LS4wMDUtLjAyNC4wMDVsLS4wMDQuMDFsLS4wMTcuNDI4bC4wMDUuMDJsLjAxLjAxM2wuMTA0LjA3NGwuMDE1LjAwNGwuMDEyLS4wMDRsLjEwNC0uMDc0bC4wMTItLjAxNmwuMDA0LS4wMTdsLS4wMTctLjQyN3EtLjAwNC0uMDE2LS4wMTctLjAxOG0uMjY1LS4xMTNsLS4wMTMuMDAybC0uMTg1LjA5M2wtLjAxLjAxbC0uMDAzLjAxMWwuMDE4LjQzbC4wMDUuMDEybC4wMDguMDA3bC4yMDEuMDkzcS4wMTkuMDA1LjAyOS0uMDA4bC4wMDQtLjAxNGwtLjAzNC0uNjE0cS0uMDA1LS4wMTgtLjAyLS4wMjJtLS43MTUuMDAyYS4wMi4wMiAwIDAgMC0uMDI3LjAwNmwtLjAwNi4wMTRsLS4wMzQuNjE0cS4wMDEuMDE4LjAxNy4wMjRsLjAxNS0uMDAybC4yMDEtLjA5M2wuMDEtLjAwOGwuMDA0LS4wMTFsLjAxNy0uNDNsLS4wMDMtLjAxMmwtLjAxLS4wMXoiIC8+CgkJPHBhdGggZmlsbD0iI2M3Y2ZmZiIgZD0ibTE3LjMwMyA5LjUyNGwzLjE4MiAzLjE4MmE1LjUgNS41IDAgMSAxLTcuNzc4IDcuNzc4bC0xLjA2LTEuMDZhMS41IDEuNSAwIDEgMSAyLjEyLTIuMTIybDEuMDYyIDEuMDYxYTIuNSAyLjUgMCAwIDAgMy41MzUtMy41MzZsLTMuMTgyLTMuMTgyYTIuNSAyLjUgMCAwIDAtMi42ODEtLjU2cS0uMjQyLjA5Ni0uNDU0LjE5NmwtLjQ2NC4yMTdjLS42Mi4yOC0xLjA5Ny40LTEuNzA0LS4yMDZjLS44NzItLjg3Mi0uNjQ2LTEuNjc3LjQxNy0yLjQxYTUuNSA1LjUgMCAwIDEgNy4wMDcuNjQybS02LjAxLTYuMDFsMS4wNiAxLjA2YTEuNSAxLjUgMCAwIDEtMi4xMiAyLjEyMmwtMS4wNjEtMS4wNkEyLjUgMi41IDAgMSAwIDUuNjM2IDkuMTdsMy4xODIgMy4xODJhMi41IDIuNSAwIDAgMCAyLjY4MS41NnEuMjQyLS4wOTYuNDU0LS4xOTZsLjQ2NC0uMjE3Yy42Mi0uMjggMS4wOTgtLjQgMS43MDQuMjA2Yy44NzIuODcyLjY0NiAxLjY3Ny0uNDE3IDIuNDFhNS41IDUuNSAwIDAgMS03LjAwNy0uNjQybC0zLjE4Mi0zLjE4MmE1LjUgNS41IDAgMSAxIDcuNzc4LTcuNzc4WiIgLz4KCTwvZz4KPC9zdmc+" type="image/svg+xml">
+    <!-- https://icon-sets.iconify.design/mingcute/link-fill/ -->
+
+
+    <!-- Umami Analytics -->
+    <script defer src="https://umami.ttools.io/script.js" data-website-id="8e027c9f-dd38-443c-8773-548e15b1c3c4"></script>
+
+    <style>
+        html {
+            font-size: x-large;
+            color-scheme: light dark;
+            /* ^ This makes browsers switch the default color scheme from white to black background if the user prefers dark mode */
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: .4rem;
+            padding-bottom: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin-top: .5rem;
+        }
+
+        p,
+        ul {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5em;
+        }
+
+        hr {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-top: 0.25rem;
+        }
+
+        /* ------------- */
+        li a {
+            display: inline-block;
+            /* margin: 1px; */
+        }
+
+
+        /* this makes stuff happen when you hover! */
+        li a:hover {
+            /* transform: rotate(-5deg); */
+            transform: scaleY(1.2) scaleX(1.05);
+            filter: hue-rotate(90deg);
+            transition: all 0.5s;
+            animation: link_hover 5s linear infinite;
+        }
+
+        a:hover {
+            display: inline-block;
+            transform: scaleY(1.05) scaleX(1.05);
+            transition: all 0.1s;
+            /* animation: link_hover 5s linear infinite; */
+        }
+
+        span>a:hover {
+            /* buttons */
+            transform: scaleY(1.5) scaleX(1.05);
+            animation: link_hover 4s linear infinite;
+
+            transition: all 1.5s;
+        }
+
+        span>a {
+
+            transition: all 1s;
+        }
+
+        @keyframes link_hover {
+            from {
+                filter: hue-rotate(0deg);
+            }
+
+            to {
+                /* transform: scaleY(1.2) scaleX(1.05); */
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        .unstyled {
+            text-decoration: none;
+            /* text: white; */
+            color: white
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <h2>link-list-list links list</h2> -->
+    <h2>link list list (indieweb)</h2>
+    <!-- <hr /> -->
+    <p>list of links to lists of links (to lists of links):</p>
+    <p style="font-size: smaller;">(list of lists of lists of websites)</p>
+    <ul>
+        <li>
+            <span style="display: flex; align-items: end;">
+                <a href="https://diagram.website">diagram.website</a>,
+                <a href="https://www.todepond.com/wikiblogarden/better-computing/better-computing/"
+                    style="font-size: 0.8em; margin-left: 0.25em;">more</a>
+            </span>
+        </li>
+        <li>
+            <a
+                href="https://discourse.32bit.cafe/t/resources-list-for-the-personal-web/49#p-63-directories-listings-12">
+                32bit listings list
+            </a>
+        </li>
+
+        <li>
+            <a
+                href="https://www.are.na/search?q=%7B%22term%22%3A%7B%22facet%22%3A%22*%22%7D%2C%22where%22%3A%5B%7B%22facet%22%3A%22ALL%22%7D%5D%2C%22what%22%3A%7B%22facets%22%3A%5B%22CHANNEL%22%5D%7D%2C%22fields%22%3A%7B%22facets%22%3A%5B%22ALL%22%5D%7D%2C%22order%22%3A%7B%22facet%22%3A%22UPDATED_AT%22%2C%22dir%22%3A%22DESC%22%7D%7D">are.na</a>,
+            <a href="https://tinygem.org/users/">tinygem</a>
+        </li>
+        <li>
+            <a href="https://raindrop.io/remot/linklists-63190614">linklist raindrop</a>,
+            <a href="https://hyperlink.cafe/">hyperlink.cafe</a>
+            <!-- maybe -->
+        </li>
+
+        <li>
+            <a href="https://brisray.com/web/webring-list.htm">webrings</a>
+        </li>
+        <li>
+            <a href="https://learn-anything.xyz">learn-anything</a>
+            <!-- maybe not big enough to include -->
+        </li>
+        <li>
+            <a>other</a>
+            <a href="https://foreverliketh.is/blog/exploring-the-personal-web/">rundowns</a>
+            <!-- <a href="https://xandra.cc/links">,</a> -->
+        </li>
+    </ul>
+    <hr />
+    <p>website features</p>
+    <ul>
+        <li>
+            <a href="https://uses.tech/">/uses</a>
+        </li>
+        <li>
+            <a href="https://nownownow.com/">/now</a>
+        </li>
+
+        <li>
+            (webrings)
+        </li>
+        <li>
+            <a
+                href="https://discourse.32bit.cafe/t/resources-list-for-the-personal-web/49#p-63-indie-advertising-networks-17">
+                advertisements
+            </a>
+            <!-- <a href="https://johnvertisementspam.neocities.org/">johnvertisements</a> -->
+        </li>
+        <li>
+            <a href="https://eightyeightthirty.one">88x31</a> <a
+                href="https://neonaut.neocities.org/cyber/88x31#links">buttons</a>
+            <!-- /<a href="">badges</a>, -->
+        </li>
+        <li>
+            stamps, <a href="https://blinkieplug.carrd.co/#next">blinkies</a>, badges, <a
+                href="https://webgardens.neocities.org/">webgardens</a>, bumper stickers,
+            userbars, blogrolls
+            <!-- buttons, webgardens, 99x56 Stamps,  blinkies, badges-->
+        </li>
+        <li><a href="https://indieweb.org/webmention.io">webmentions</a></li>
+        <!-- <li>blogrolls</li> -->
+        <!-- https://blogroll.org/ -->
+        <li></li>
+        <!-- <li></li> -->
+    </ul>
+
+    <hr>
+    <p>indie web hosts & directories</p>
+    <ul>
+        <li>
+            <a href="https://neocities.org/browse">neocities</a>
+            <!-- <ul>
+                
+            </ul> -->
+        </li>
+        <li>
+            <a href="https://nekoweb.org/explore">nekoweb</a>
+        </li>
+        <li>
+            <a href="https://ichi.city/homepages">ichi.city</a>
+        </li>
+        <li>
+            <!-- some i forget -->
+            ...
+        </li>
+    </ul>
+    <hr>
+    <p>search tools</p>
+    <ul>
+        <li>
+            <a href="https://stract.com/explore">find</a> similar
+            <a href="https://www.google.com/search?q=%22example.com%22">sites</a>
+        </li>
+        <li>
+            Explore tools
+            <!-- ie the ones from search engines -->
+        </li>
+    </ul>
+
+    <!-- <hr style="visibility: hidden;"> -->
+    <hr>
+    <p id="search-engines"><a href="#search-engines" class="unstyled">Search Engines</a></p>
+    <ul>
+        <li>
+            <a href="https://marginalia-search.com/">marginalia</a>
+        </li>
+        <li>
+            <a href="https://searchmysite.net/">searchmysite</a>
+        </li>
+        <li>
+            <a href="https://seirdy.one/posts/2021/03/10/search-engines-with-own-indexes/">more!</a>
+        </li>
+
+        <li>
+            <a href="https://www.are.na/search?q=">are.na</a>,
+            <a href="https://tinygem.org/#section">tinygem</a>
+        </li>
+        <li>
+            <a href="kagi.com">kagi</a>
+        </li>
+    </ul>
+    <hr>
+    <p>Web Genres</p>
+    <ul>
+        <li>
+            Digital gardens / personal wikis / evergreen notes / zetelkastens / more names (meta):
+            <a href="">1</a>,
+            <a href="">2</a>,
+            <a href="">3</a>,
+            <a href="">4</a>,
+            <a href="">5</a>,
+        </li>
+        <li>
+            Blogs:
+            <a href="https://blogroll.org/">1</a>, 2,
+            <a href="https://substack.com/browse/staff-picks">3</a>
+            <!-- <a href="https://substack.com/browse/staff-picks">Substack</a> (I fear it slowly closing /
+            ensh&#8209;ttifying), -->
+        </li>
+        <li>
+            <a href="https://raindrop.io/remot/forums-63605859">Forums/Social Medias</a>
+        </li>
+        <li>The platforms: youtube, ig reels, twitter, twitch, discord, <a
+                href="https://anvaka.github.io/map-of-reddit/">reddit</a></li>
+        <!-- could make a types of websites list, have this, forums, tools -->
+    </ul>
+
+    <!-- <hr>
+
+    <p>More cool hub sites</p>
+    <ul>
+        <li>
+            <a href="https://anvaka.github.io/map-of-reddit/">Map of reddit</a>
+        </li>
+    </ul> -->
+
+    <hr>
+    <p>some favorite starter pages:</p>
+    <ul>
+        <li>
+            <a href="https://lyra.horse/css-clicker/">CSS clicker (website themed)</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/results?search_query=indieweb">youtube.com</a>,
+            <a href="https://anvaka.github.io/map-of-reddit/">Reddit
+                <span style="font-size: smaller;">(map)</span>
+            </a>
+        </li>
+        <li>
+            fmhy
+        </li>
+
+        <!-- or could make random links button which takes you to random link -->
+        <!-- jreg noise: (make a button?) find best link
+          https://www.youtube.com/watch?v=CMkh6GwHtPc
+           -->
+    </ul>
+    <div style="margin-top:1rem"></div>
+
+    <!-- fmhy? -->
+    <div>
+        <span>
+            <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif"></a>
+        </span>
+        <span>
+            <a href="https://melonland.net/"><img src="https://melonland.net/images/melonland-badge-2.gif" alt=""></a>
+        </span>
+    </div>
+    <!-- todo: look into tildeverse -->
+
+    <div style="margin-top:2rem"></div>
+
+    <div style="display:flex; align-items: center; justify-content:center; gap:0.3rem">
+
+        <a href="https://www.youtube.ttools.io/watch?v=CMkh6GwHtPc" style="
+            width:fit-content; height: 90px; position:relative;  display:block; margin-right:10px; margin-left:2rem;
+        ">
+            <img src="https://img.youtube.com/vi/CMkh6GwHtPc/default.jpg" alt="" height="90">
+            <div style="
+            position:absolute; bottom:0px; left:0px; width:100%; height:100%; display:flex; justify-content: center; align-items: center; font-size: 1.15rem;
+        ">
+                Noise
+            </div>
+            <!-- Or could put a tiny square of his face linking this next to the diagram website link. or secret -->
+        </a>
+        <span style="margin-left:10px"></span>
+        <a href="https://www.youtube.com/watch?v=HWl1Tu9oZmY&list=PLQQj6Cezh2Nupac5mjljKE-SncM_2Go59&index=7"
+            style="margin-right:1rem; position:relative; display:inline-block; width: fit-content;">
+            <img src="https://img.youtube.com/vi/HWl1Tu9oZmY/default.jpg" alt="">
+            <div style="
+                position:absolute; top:0; left:0px; width:100%; height:100%; display:flex; justify-content: center; align-items: center; font-size: 0.8rem; font-weight: bolder;
+            ">
+                <mark style="color:inherit; background-color: rgba(0,0,0,0.75); ">
+
+                    🖕Fck my <br> computer
+                    <!-- Fck computers -->
+                    <!-- fck my computer -->
+                    <!-- 🖕 -->
+                </mark>
+                <!-- or https://www.youtube.com/watch?v=gs-KGzm8rZs -->
+            </div>
+        </a>
+        <a href="https://store.steampowered.com/app/844590/Hypnospace_Outlaw/" style=" 
+            position:relative; display:inline-block; margin-bottom: 0rem; width: fit-content; height:70px
+        ">
+            <img src={hypnospaceImage.src} alt="" height="70px" width="150px">
+            <!-- or https://www.youtube.com/watch?v=gs-KGzm8rZs -->
+            <figcaption style="position:absolute; bottom:0; width: 100%; text-align: center; font-weight: bolder;">
+
+            </figcaption>
+        </a>
+    </div>
+    </a>
+
+    <!-- want to make these a circle, comma maybe better -->
+
+    </div>
+
+    <!-- <br> -->
+
+
+
+    <br>
+    <br>
+    <br>
+    <!-- <hr> -->
+    <p>I'm still building out this page. Send me more links that you think fit!</p>
+    <p>Will contact & guestbook soon.</p>
+    <p><a href="https://remoth.atabook.org/">Guestbook</a></p>
+    <!-- <p>But feel free to send me more meta-style links for this page!</p> -->
+
+
+    <!-- TODO Add adds (+ guestbook) -->
+    <br>
+    <br>
+
+
+    <!-- <div
+        style="border:1px solid purple;  width:5rem; height: 5rem; display:flex; justify-content: center; align-items: center;">
+        Noise
+    </div> -->
+    <!-- <a href="https://www.youtube.ttools.io/watch?v=CMkh6GwHtPc" style="width:150px; height: 90px; position:relative">
+        <img src="https://img.youtube.com/vi/CMkh6GwHtPc/default.jpg" alt="">
+        <div style="
+            position:absolute; bottom:37px; left:0; width:100%; height:100%; display:flex; justify-content: center; align-items: center; font-size: 1.15rem;
+        ">
+            Noise
+        </div>
+    </a> -->
+    <!-- <iframe width="150" height="90" src="https://www.youtube-nocookie.com/embed/CMkh6GwHtPc?si=6I6X9gqEPchgEmgp"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+    <!-- <br> -->
+
+
+
+    <br>
+
+    <!-- <div style="margin-top: 15vh;"></div> -->
+
+    <iframe width="180" height="180" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>
+    <!-- <br> -->
+    <iframe width="180" height="180" style="border:none" src="https://evehibi.nekoweb.org/ringlink/" name="ringlink"></iframe>
+    <br>
+
+    <iframe src="https://john.citrons.xyz/embed?ref=remoth" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:74px;border:none;"></iframe>
+    <!-- <br> -->
+    <p style="font-size: 0.75rem; opacity: 0.5; text-align: center; margin-bottom:0.1rem; margin-top:2.5rem; border-top: 1px solid rgba(255, 255, 255, 0.5); padding-top: 3px">created  late 2025</p>
+    <!-- can do with emoji by name -->
+    <!-- or ©️ late 2025 -->
+
+
+</body>
+
+</html>
+<!-- 
+Feature ideas for website
+realtime cursors of others
+visit count
+features listed
+Guestbook!
+----
+pages/links:
+- unhinged substack (lots of complicated math on directional anonymity. bottom line dont ideally want irl person to find this but discord person is ok... idk. its not that bad ig the substack. still...)
+programmer youtuber List (maybe put on ttools)
+- letterboxd
+
+
+ -->
