@@ -1,4 +1,5 @@
 ---
+import Layout from "../layouts/Layout.astro";
 // import EmailSignUp from "../components/EmailSignUp.astro";
 
 /*<!-- <li>
@@ -11,6 +12,7 @@
         </li> -->*/
 ---
 
+<Layout>
 <style>
     html {
         color-scheme: light dark;
@@ -73,7 +75,7 @@
         </li>
         <li>
             <a href="https://tv-calendar.com/calendar" data-umami-event="go to tv-calendar"
-                >TV calendar</a
+                >TV Calendar</a
             >
         </li>
         <li>
@@ -157,12 +159,17 @@
             >
         </li>
         <li>
+            <a href="https://signal.me/#eu/nDQqI9ZT1BaPDdlpbOCdw7khCsR61sZx8wssbfitOGRq7H1AXBBKcq0oIoCrf73g" data-umami-event="go to signal">
+                Signal</a>,
             <a href="mailto: contact@ttools.io" data-umami-event="go to email">
                 Email</a>,
-            <a href="https://signal.me/#eu/nDQqI9ZT1BaPDdlpbOCdw7khCsR61sZx8wssbfitOGRq7H1AXBBKcq0oIoCrf73g" data-umami-event="go to signal">
-                Signal
+            <a href="https://discord.com/users/1073449973993185433"> 
+                <!-- ^ not the most ideal link format as it doesnt give username without going through it. but good enough -->
+                Discord
             </a>
+            
         </li>
+        <!-- could add linkedin... -->
     </ul>
     <p>Feel free to contact me about anything!</p>
     <!-- 
@@ -195,3 +202,4 @@
     ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒.io
     `);
 </script>
+</Layout>
